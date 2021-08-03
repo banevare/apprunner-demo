@@ -38,6 +38,6 @@ This is an example web service for AWS App Runner. You can use this repo to depl
 		    Port: 3000
 	
 	- Service name:`simple-webapp`
-	- Everything else can be left as default. Select `"Create & deplop"`
+	- Everything else can be left as default. Select `"Create & deploy"`
 
 ### Option 2: From container
