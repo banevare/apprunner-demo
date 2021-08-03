@@ -14,7 +14,7 @@ This is an example web service for AWS App Runner. You can use this repo to depl
 
 1. Fork this Repository:
 
-	- Press the Fork button in the upper left. This will create an exact copy of the repository (and all of its branches) under your own username.
+	- Press the Fork button in the upper right. This will create an exact copy of the repository (and all of its branches) under your own username.
 
 2. Open the AWS Console and browse to the [AWS App Runner service](https://console.aws.amazon.com/apprunner/home?region=us-east-1#/services).
       - Select 	`"Create a service"`
