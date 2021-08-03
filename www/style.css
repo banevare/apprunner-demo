@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Amazon Ember';
+	src: url(static/fonts/AmazonEmber_Rg.ttf);
+	font-style: normal;
+	font-variant: normal;
+}
+@font-face {
+	font-family: 'Amazon Ember Thin';
+	src: url(static/fonts/AmazonEmber_Th.ttf);
+	font-style: normal;
+	font-variant: normal;
+}
+*::selection{
+	color:#007eb9;
+}
+body{
+	background: #232f3e;
+	color: #FFFFFF;
+}
+.aws-logo{
+	width: 7%;
+	height: 7%;
+	margin-left: 1.5%;
+}
+.background{
+	position:absolute;
+	top:0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height:100%;
+	display: block;
+	z-index: -1;
+}
+.c-div{
+	display: flex;
+	justify-content: center;
+	margin-top: calc(12vh - 10px); 
+}
+.apprunner-logo{
+	height: 14vh;
+}
+.c-request{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 10px;
+}
+.c-title{
+	font-weight: medium;
+	font-size: 50px;
+	font-family: Amazon Ember;
+	letter-spacing: .05em;
+	opacity: 1;
+}
+.c-sub__body{
+	text-align: center;
+	font-weight: 900;
+	font-size:15px;
+	line-height: 10px;
+	font-family: Amazon Ember Thin;
+	opacity: 1;
+}
+td {
+	padding-right: .5em;
+	padding-left: 1.5em;
+	text-align: center;
+	white-space: nowrap;
+}
+.c-media__body{
+	font-family: Amazon Ember;
+	font-weight: normal;
+	font-size: 15px;
+}
+.o-media__icon-db{
+	height: 2.75%;
+}
+.c-btn {
+	font-family: Amazon Ember;
+	font-weight: normal;
+	color:#05A0D1;
+	text-decoration: none;
+	line-height: 200%;
+	justify-content: center;
+	font-size: .5em;
+}
+.o-external{
+	height:40%;
+}
+/* @media(max-width: 665px){
+	.c-div{
+		margin-top: calc(23vh - 10px);  
+	}
+	.c-title{
+		font-size: 40px;
+	}
+	.c-sub__body{
+		font-size:13px;
+	}
+	.apprunner-logo{
+		height: 8vh;
+	}
+	td {
+		padding-right: 2em;
+		padding-left: 3em;
+		/* text-align: center; 
+		white-space: nowrap;
+	}
+	.o-media__icon{
+		height: 60%;
+	}
+	.c-media__body{
+		font-size: 12px;
+	}
+} */
+/* @media(max-height: 644px){
+	.c-div{
+		margin-top: calc(20vh - 10px);  /* half of height 
+	}
+	.c-title{
+		font-size: 25px;
+	}
+	.c-sub__body{
+		font-size:15px;
+	}
+	.apprunner-logo{
+		height: 8vh;
+	}
+	td {
+		padding-right: 1em;
+		padding-left: 1em;
+		text-align: center;
+		white-space: nowrap;
+	}
+	.o-media__icon{
+		height: 45%;
+	}
+	.c-media__body{
+		font-size: 13px;
+	}
+} */

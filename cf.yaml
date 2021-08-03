@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Description: CloudFormation template that deploys app-runner demo
+Parameters:
+  ServiceName:
+    Type: String
+    Default: app-runner-demo
+    Description: Name for your App Runner service.
+Resources:
+  Service:
+    Metadata:
+      'aws:apprunner:description': 'app-runner example service'
+    Type: AWS::AppRunner::Service
+    Properties:
+      ServiceName: !Ref ServiceName
+      SourceConfiguration:
+        AutoDeploymentsEnabled: false
+        ImageRepository:
+          ImageIdentifier: public.ecr.aws/g8t1v6w5/app-runner-repo:latest
+          ImageRepositoryType: ECR_PUBLIC
+          ImageConfiguration:
+            Port: 3000
+Outputs:
+  Endpoint:
+    Description: "The endpoint of the App Runner service."
+    Value: !GetAtt Service.ServiceUrl
