@@ -25,7 +25,7 @@ This is an example web service for AWS App Runner. You can use this repo to depl
 			 repository: apprunner-demo
 			 branch: main
       
-	 - Deployment settings: `Manual`
+	 - Deployment settings: `Automatic`
 	 - Build settings:
 	
 		**Option 1:** `Use a configuration file`. App Runner looks for the `apprunner.yaml` in your source repository.
