@@ -38,7 +38,8 @@ This is an example web service for AWS App Runner. You can use this repo to depl
 		    Port: 3000
 	
 	- Service name:`simple-webapp`
-	- Everything else can be left as default. Select `"Create & deploy"`
+	- Everything else can be left as default. Select `Next`
+	- Select `"Create & deploy"`
 
 ### Option 2: From container
 Use Case: Launch a containerized website application if the runtime is other than node or python.
