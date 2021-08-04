@@ -53,9 +53,9 @@ Use Case: Launch a containerized website application if the runtime is other tha
 	- Repository Type: `Container Registry`
 	- Provider: `Amazon ECR`
 	- Container image URI: Click on `Browse` and select your image repository and image tag. 
-	- Deployment Settings
+	- Deployment Settings:
 	
-	 	Deployment Trigger: `Automatic`
+	 	    Deployment Trigger: Automatic
 		
 		ECR Access Role: The IAM Role created grants App Runner read permissions only to Amazon ECR resources.
 	
@@ -65,6 +65,7 @@ Use Case: Launch a containerized website application if the runtime is other tha
 	
 	 	   Service name: simple-webapp
 		   Port: 3000
+		   
 	- Everything else can be left as default. Select `Next`
 	- Select `Create & deploy`
 	
