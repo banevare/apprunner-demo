@@ -5,7 +5,14 @@
 ## What is AWS App Runner?
 [AWS App Runner](https://aws.amazon.com/apprunner/) is a fully managed service that makes it easy for developers to quickly deploy containerized website applications and APIs at scale.
 
-This is an example web service for AWS App Runner. You can use this repo to deploy the web application two ways.
+## Resources
+
+Any issues encounterings, please consider contributing to our [list of known issues](https://github.com/aws/apprunner-roadmap/issues).
+
+Check out App Runner's roadmap [here](https://github.com/aws/apprunner-roadmap/projects/1).
+
+## What is this Github Repository?
+This is an example web service for AWS App Runner. You can use this repo to deploy the web application two different ways.
 
 
 ## Deploy to App Runner
