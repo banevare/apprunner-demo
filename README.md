@@ -12,7 +12,7 @@ Any issues encounterings, please consider contributing to our [list of known iss
 Check out App Runner's roadmap [here](https://github.com/aws/apprunner-roadmap/projects/1).
 
 ## What is this Github Repository?
-This is an example web service for AWS App Runner. You can use this repo to deploy the web application two different ways.
+This is an example web application for AWS App Runner. You can use this repo to deploy the web application two different ways.
 
 
 ## Deploy to App Runner
