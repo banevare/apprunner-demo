@@ -14,7 +14,7 @@
 	color:#007eb9;
 }
 body{
-	background: ##232f3e;
+	background: #232f3e;
 	color: #FFFFFF;
 }
 .aws-logo{
@@ -87,55 +87,4 @@ td {
 .o-external{
 	height:40%;
 }
-/* @media(max-width: 665px){
-	.c-div{
-		margin-top: calc(23vh - 10px);  
-	}
-	.c-title{
-		font-size: 40px;
-	}
-	.c-sub__body{
-		font-size:13px;
-	}
-	.apprunner-logo{
-		height: 8vh;
-	}
-	td {
-		padding-right: 2em;
-		padding-left: 3em;
-		/* text-align: center; 
-		white-space: nowrap;
-	}
-	.o-media__icon{
-		height: 60%;
-	}
-	.c-media__body{
-		font-size: 12px;
-	}
-} */
-/* @media(max-height: 644px){
-	.c-div{
-		margin-top: calc(20vh - 10px);  /* half of height 
-	}
-	.c-title{
-		font-size: 25px;
-	}
-	.c-sub__body{
-		font-size:15px;
-	}
-	.apprunner-logo{
-		height: 8vh;
-	}
-	td {
-		padding-right: 1em;
-		padding-left: 1em;
-		text-align: center;
-		white-space: nowrap;
-	}
-	.o-media__icon{
-		height: 45%;
-	}
-	.c-media__body{
-		font-size: 13px;
-	}
-} */
+
