@@ -25,6 +25,8 @@ This is an example web application for AWS App Runner. You can use this repo to 
 
 2. Open the AWS Console and browse to the [AWS App Runner service](https://console.aws.amazon.com/apprunner/home?region=us-east-1#/services).
       - Select 	`"Create a service"`
+      <img width="814" alt="Screen Shot 2021-08-12 at 11 05 31 AM" src="https://user-images.githubusercontent.com/86380762/129246694-c3a8fbd5-4bc3-46e1-becf-b17cd60f27fd.png">
+
       -  Repository Type: `Source code repository`
       -  Connect To Github:
 	 		
@@ -33,6 +35,8 @@ This is an example web application for AWS App Runner. You can use this repo to 
 			 branch: main
       
 	 - Deployment settings: `Automatic`
+	 <img width="805" alt="Screen Shot 2021-08-12 at 11 03 11 AM" src="https://user-images.githubusercontent.com/86380762/129246936-5ad5e7a1-486a-4cf5-b9e4-485ff937973b.png">
+
 	 - Build settings:
 	
 		**Option 1:** `Use a configuration file`. App Runner looks for the `apprunner.yaml` in your source repository.
