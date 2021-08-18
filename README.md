@@ -32,14 +32,15 @@ This is an example web application for AWS App Runner. You can use this repo to 
       
       * #### Source:
       	* Repository type: `Source code repository`
-      
       	* Connect to GitHub:
       			
 			```
 			Connection name: apprunner-connection
 		    Repository: apprunner-demo
 		    Branch: main
-		<img width="803" alt="Screen Shot 2021-08-18 at 11 18 57 AM" src="https://user-images.githubusercontent.com/86380762/129958550-056b9d9d-4e6d-41cb-aeec-758e558dfdd1.png">
+		 <img width="647" alt="Screen Shot 2021-08-18 at 1 53 53 PM" src="https://user-images.githubusercontent.com/86380762/129970850-0353c85b-e8fe-4719-a007-fe9dfd31ba9e.png">
+
+
 	
 	* Deployment settings: `Automatic`
 		
@@ -76,23 +77,27 @@ Use Case: Launch a containerized website application if the runtime is other tha
 	
 2. Build a  docker image locally and deploy it using an ECR private repo. App Runner currently only supports docker images being hosted in ECR.
 3. Open the AWS Console and browse to the [AWS App Runner service](https://console.aws.amazon.com/apprunner/home?region=us-east-1#/services).
-	- Select `"Create a service"`
-	- Repository Type: `Container Registry`
-	- Provider: `Amazon ECR`
-	- Container image URI: Click on `Browse` and select your image repository and image tag. 
-	- Deployment Settings:
-	
-	 	    Deployment Trigger: Automatic
+	* Select `"Create a service"`
+	* Source:
+		* Repository Type: `Container Registry`
+		* Provider: `Amazon ECR`
+		* Select `Browse` and select your image repository and image tag.
+		<img width="637" alt="Screen Shot 2021-08-18 at 12 49 26 PM" src="https://user-images.githubusercontent.com/86380762/129970276-5bed8e8e-46de-48c8-b2c7-f297c5c48a81.png">
+
+
+	* Deployment Settings:
+		* Deployment Trigger: `Automatic`
+		* ECR Access Role: The IAM Role created grants App Runner read permissions only to Amazon ECR resources.
+			* Select: `Create new service role`
+			* Service role name: `AppRunnerECRAccessRole`
+			<img width="765" alt="Screen Shot 2021-08-18 at 12 50 03 PM" src="https://user-images.githubusercontent.com/86380762/129970369-32eee2a9-67fe-4f25-9b1e-9470e54e62ec.png">
+
+	* Configure settings:
+		* Service name: `apprunner-container-demo`
+		* Port: `3000`
 		
-		ECR Access Role: The IAM Role created grants App Runner read permissions only to Amazon ECR resources.
-	
-		    Select: Create new service role
-		    Service role name example: AppRunnerECRAccessRole
-	- Service settings:
-	
-	 	   Service name: simple-webapp
-		   Port: 3000
-		   
+		<img width="751" alt="Screen Shot 2021-08-18 at 2 05 32 PM" src="https://user-images.githubusercontent.com/86380762/129972131-4ca1e4c8-a844-42ec-93fd-99cb9ed85670.png">
+
 	- Everything else can be left as default. Select `Next`
 	- Select `Create & deploy`
 	
