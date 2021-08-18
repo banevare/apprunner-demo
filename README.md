@@ -58,7 +58,7 @@ This is an example web application for AWS App Runner. You can use this repo to 
 	
 	  	<img width="806" alt="Screen Shot 2021-08-18 at 11 19 29 AM" src="https://user-images.githubusercontent.com/86380762/129959497-57a23b24-9f68-4809-9b4c-0e119d7b30d6.png">
 	 
-	* Configure settings:
+	* Service settings:
 		* Service name: `apprunner-demo`
 		* Everything else can be left as default. Select `Next`
 		
