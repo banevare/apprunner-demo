@@ -21,23 +21,31 @@ This is an example web application for AWS App Runner. You can use this repo to 
 
 1. Fork this Repository:
 
-	- Press the Fork button in the upper right. This will create an exact copy of the repository (and all of its branches) under your own username.
+	* Press the Fork button in the upper right. This will create an exact copy of the repository (and all of its branches) under your own username.
 
 2. Open the AWS Console and browse to the [AWS App Runner service](https://console.aws.amazon.com/apprunner/home?region=us-east-1#/services).
-      - Select 	`"Create a service"`
-      <img width="814" alt="Screen Shot 2021-08-12 at 11 05 31 AM" src="https://user-images.githubusercontent.com/86380762/129246694-c3a8fbd5-4bc3-46e1-becf-b17cd60f27fd.png">
-
-      -  Repository Type: `Source code repository`
-      -  Connect To Github:
-	 		
-			 connection name example: apprunner-conn
-			 repository: apprunner-demo
-			 branch: main
+      * Select 	`"Create a service"`
+     
+     
+      	<img width="814" alt="Screen Shot 2021-08-12 at 11 05 31 AM" src="https://user-images.githubusercontent.com/86380762/129246694-c3a8fbd5-4bc3-46e1-becf-b17cd60f27fd.png">
       
-	 - Deployment settings: `Automatic`
-	 <img width="805" alt="Screen Shot 2021-08-12 at 11 03 11 AM" src="https://user-images.githubusercontent.com/86380762/129246936-5ad5e7a1-486a-4cf5-b9e4-485ff937973b.png">
+      
+      * #### Source:
+      	* Repository type: `Source code repository`
+      
+      	* Connect to GitHub:
+      			
+			```
+			Connection name: apprunner-connection
+		    Repository: apprunner-demo
+		    Branch: main
+		<img width="803" alt="Screen Shot 2021-08-18 at 11 18 57 AM" src="https://user-images.githubusercontent.com/86380762/129958550-056b9d9d-4e6d-41cb-aeec-758e558dfdd1.png">
+	
+	* Deployment settings: `Automatic`
+		
+		<img width="805" alt="Screen Shot 2021-08-12 at 11 03 11 AM" src="https://user-images.githubusercontent.com/86380762/129246936-5ad5e7a1-486a-4cf5-b9e4-485ff937973b.png">
 
-	 - Build settings:
+	 * #### Build settings:
 	
 		**Option 1:** `Use a configuration file`. App Runner looks for the `apprunner.yaml` in your source repository.
 		
@@ -48,9 +56,16 @@ This is an example web application for AWS App Runner. You can use this repo to 
 		    Start command: node node.js	
 		    Port: 3000
 	
-	- Service name:`simple-webapp`
-	- Everything else can be left as default. Select `Next`
-	- Select `"Create & deploy"`
+	  	<img width="806" alt="Screen Shot 2021-08-18 at 11 19 29 AM" src="https://user-images.githubusercontent.com/86380762/129959497-57a23b24-9f68-4809-9b4c-0e119d7b30d6.png">
+	 
+	* Configure settings:
+		* Service name: `simple-webapp`
+		* Everything else can be left as default. Select `Next`
+		
+		
+	  	 <img width="802" alt="Screen Shot 2021-08-18 at 11 19 42 AM" src="https://user-images.githubusercontent.com/86380762/129960539-456fe347-d566-4368-9390-4e8c86a5720a.png">
+
+	* Select `"Create & deploy"`
 
 ### Option 2: From container
 Use Case: Launch a containerized website application if the runtime is other than node or python.
